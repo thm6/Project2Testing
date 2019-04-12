@@ -14,7 +14,7 @@ class CreateCarsTable extends Migration
     public function up()
     {
         Schema::create('cars', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('Make');
             $table->string('Model');
             $table->integer('Year');
