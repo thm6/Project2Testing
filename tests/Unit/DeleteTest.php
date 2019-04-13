@@ -16,16 +16,15 @@ class DeleteTest extends TestCase
      */
     public function testExample()
     {
-        {
 
-            $user = User::inRandomOrder()->first();
+        {
+            $user = new User();
             $user->name = '';
             $user->email = '';
             $user->password = '';
             $user->save();
             $this->assertTrue($user->delete());
         }
-
 
     }
 }
