@@ -52,6 +52,13 @@ class CaryearTest extends TestCase
         $this->assertContains($value,['Ford','Honda','Toyota']);
     }
 
+    public function testCarString()
+    {
+        $car = Car::inRandomOrder()->first();
+        $this->assertInternalType('string',$car->Model);
+        $this->assertInstanceOf('App\Car',$car);
+    }
+
 
 
 
