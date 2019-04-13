@@ -17,6 +17,7 @@ class DeleteTest extends TestCase
     public function testExample()
     {
         {
+
             $user = User::inRandomOrder()->first();
             $user->name = '';
             $user->email = '';

@@ -21,6 +21,7 @@ class UpdateuserTest extends TestCase
         $user->email = 'steve@live.com';
         $user->password = 'steve';
         $this->assertTrue($user->save());
+
     }
 
 }
